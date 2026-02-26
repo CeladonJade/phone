@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
-    <title>CJ</title>
+    <title>jrsy</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="apple-touch-icon" href="https://CJ081113-hue.github.io/CJ/star-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="https://CJ081113-hue.github.io/CJ/star-icon.png">
+    <link rel="apple-touch-icon" href="https://jrsy081113-hue.github.io/jrsy/star-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="https://jrsy081113-hue.github.io/jrsy/star-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Roboto+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -6590,7 +6590,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
  * 核心修改说明:
  * 1. 原本作用于 <body> 的样式，现在作用于 ID 为 #desktop-page-2 的页面容器。
  * 2. 移除了不再需要的 #phone-screen 样式。
- * 3. 为所有其他样式规则添加了 #desktop-page-2 前缀，以防止与 CJ 项目的原有样式冲突。
+ * 3. 为所有其他样式规则添加了 #desktop-page-2 前缀，以防止与 jrsy 项目的原有样式冲突。
 */
 
 #desktop-page-2 {
@@ -8160,7 +8160,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     display: inline-block;
     opacity: 0;
     transform: translateY(-30px);
-    animation: CJ_splash_letterFloat 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation: jrsy_splash_letterFloat 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 #loadingOverlay .logo span:nth-child(1) { animation-delay: 0.1s; }
@@ -8168,7 +8168,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
 #loadingOverlay .logo span:nth-child(3) { animation-delay: 0.3s; }
 #loadingOverlay .logo span:nth-child(4) { animation-delay: 0.4s; }
 
-@keyframes CJ_splash_letterFloat {
+@keyframes jrsy_splash_letterFloat {
     to {
         opacity: 1;
         transform: translateY(0);
@@ -8182,7 +8182,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     color: #666;
     letter-spacing: 3px;
     opacity: 0;
-    animation: CJ_splash_fadeIn 0.6s ease-out 0.8s forwards;
+    animation: jrsy_splash_fadeIn 0.6s ease-out 0.8s forwards;
 }
 
 
@@ -8194,7 +8194,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     display: flex;
     gap: 12px;
     opacity: 0;
-    animation: CJ_splash_fadeIn 0.8s ease-out 0.5s forwards;
+    animation: jrsy_splash_fadeIn 0.8s ease-out 0.5s forwards;
 }
 
 #loadingOverlay .bubble {
@@ -8202,13 +8202,13 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     height: 8px;
     background-color: #000;
     border-radius: 50%;
-    animation: CJ_splash_bubblePulse 1.5s ease-in-out infinite;
+    animation: jrsy_splash_bubblePulse 1.5s ease-in-out infinite;
 }
 
 #loadingOverlay .bubble:nth-child(2) { animation-delay: 0.2s; }
 #loadingOverlay .bubble:nth-child(3) { animation-delay: 0.4s; }
 
-@keyframes CJ_splash_bubblePulse {
+@keyframes jrsy_splash_bubblePulse {
     0%, 100% { 
         transform: scale(1);
         opacity: 0.3;
@@ -8232,7 +8232,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     letter-spacing: 2px;
     margin-bottom: 24px;
     opacity: 0;
-    animation: CJ_splash_fadeIn 0.6s ease-out 1s forwards;
+    animation: jrsy_splash_fadeIn 0.6s ease-out 1s forwards;
     height: 15px; /* 给一个固定高度防止内容跳动 */
 }
 
@@ -8240,10 +8240,10 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
 #loadingOverlay .typing-text {
     display: inline-block;
     border-right: 2px solid #000;
-    animation: CJ_splash_blink 0.8s step-end infinite;
+    animation: jrsy_splash_blink 0.8s step-end infinite;
 }
 
-@keyframes CJ_splash_blink {
+@keyframes jrsy_splash_blink {
     50% { border-color: transparent; }
 }
 
@@ -8263,14 +8263,14 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     background: linear-gradient(90deg, #000 0%, #333 50%, #000 100%);
     background-size: 200% 100%;
     animation: 
-        CJ_splash_shimmer 1.5s ease-in-out infinite; /* 移除 loading 动画，由JS控制 */
+        jrsy_splash_shimmer 1.5s ease-in-out infinite; /* 移除 loading 动画，由JS控制 */
     position: relative;
     /* 新增：让宽度变化更平滑 */
     transition: width 0.1s linear; 
 }
 
 /* 进度条闪烁效果 */
-@keyframes CJ_splash_shimmer {
+@keyframes jrsy_splash_shimmer {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
 }
@@ -8285,7 +8285,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     color: #000;
     font-variant-numeric: tabular-nums;
     opacity: 0;
-    animation: CJ_splash_fadeIn 0.6s ease-out 1.2s forwards;
+    animation: jrsy_splash_fadeIn 0.6s ease-out 1.2s forwards;
 }
 
 /* 状态提示 */
@@ -8293,7 +8293,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     margin-top: 20px;
     height: 20px;
     opacity: 0;
-    animation: CJ_splash_fadeIn 0.6s ease-out 1.5s forwards;
+    animation: jrsy_splash_fadeIn 0.6s ease-out 1.5s forwards;
 }
 
 #loadingOverlay .hint {
@@ -8307,24 +8307,24 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
 }
 
 #loadingOverlay .hint.active {
-    animation: CJ_splash_hintFade 1.5s ease-in-out;
+    animation: jrsy_splash_hintFade 1.5s ease-in-out;
 }
 
-@keyframes CJ_splash_hintFade {
+@keyframes jrsy_splash_hintFade {
     0%, 100% { opacity: 0; }
     20%, 80% { opacity: 1; }
 }
 
-@keyframes CJ_splash_fadeIn {
+@keyframes jrsy_splash_fadeIn {
     to { opacity: 1; }
 }
 
 /* 淡出 */
 #loadingOverlay .fade-out {
-    animation: CJ_splash_fadeOut 0.8s ease-out forwards;
+    animation: jrsy_splash_fadeOut 0.8s ease-out forwards;
 }
 
-@keyframes CJ_splash_fadeOut {
+@keyframes jrsy_splash_fadeOut {
     to {
         opacity: 0;
         transform: translateY(-20px);
@@ -19309,7 +19309,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
 }
 
 /* 2. 导航栏：回归标准位置 (Standard Layout) */
-/* 这里的数值 30px 和 44px 是 CJ 系统的标准参数 */
+/* 这里的数值 30px 和 44px 是 jrsy 系统的标准参数 */
 #forumMessagesView .forum-nav-bar {
     position: absolute;
     top: 30px !important;   /* 【关键】距离顶部 30px，留出状态栏的位置 */
@@ -21607,7 +21607,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     <!-- 激活码主容器 -->
     <div class="container" id="activationContainer">
         <div class="logo-section">
-            <div class="logo">CJ</div>
+            <div class="logo">jrsy</div>
             <div class="subtitle">AI ASSISTANT</div>
         </div>
 
@@ -21771,7 +21771,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
                     <!-- 滑动区域 -->
                     <div id="home-screen-pager">
                         
-                        <!-- 第1页：原始的CJ主屏幕内容 (现在没有Dock栏了) -->
+                        <!-- 第1页：原始的jrsy主屏幕内容 (现在没有Dock栏了) -->
                         <div class="home-screen-page">
                             <div class="profile-widget-container" id="profileWidgetContainer">
                                 <div class="profile-widget">
@@ -29633,7 +29633,7 @@ onchange="handleFriendAvatarUpload(event)"><span id="friendAvatarPreview">+</spa
                 // --- [REFACTORED & ROBUST] IndexedDB Manager (v3) ---
         const dbManager = {
             db: null,
-            dbName: 'CJ_DB_V2',
+            dbName: 'jrsy_DB_V2',
             dbVersion: 22,
             stores: [
                 'friends', 'chatHistories', 'diaries', 'worldBooks', 'worldBookFolders', 
@@ -29762,7 +29762,7 @@ requestPersistentStorage();
 
 const CURRENT_ANNOUNCEMENT = {
     version: 16, // 版本号升级
-    title: "CJ 系统更新公告",
+    title: "jrsy 系统更新公告",
     content: `<div class="announcement-notice"><b>特别声明</b>：本网址（小手机）售价仅为 <b>12.2元</b>，唯一指路小红书：<b>景入桑榆</b>。凡是以其他价格购买的均为遇到倒卖或骗子！本网站<b>严禁二转及商业倒卖</b>，请尊重创作者的劳动成果。若发现倒卖或二转可以联系创作者小红书进行举报，感谢理解！</div><div class="update-section"><h3 class="update-subtitle">新功能/优化</h3><div style="margin-bottom:10px;font-weight:bold;">【新功能不知道怎么用的看下群相册的教程】</div><ul class="update-list"><li>1. 新增总结提示词，可以输入提示词进行总结，控制总结长度和风格 </li><li>2. 美化设置里缺少的几个功能图标都补上了  </li><li>3. 直播app还没有做好，目前只可以看直播，最好不要打开使用，如果实在想玩可以进去摸索一下看看直播。 </li><li>4. <b>入梦功能大升级</b>：含日夜模式/白噪音/存档读档。<b>①普通梦境</b>：可以进入char的梦境，可以给三个关键词来编织梦境，梦境服务于char，所以在梦境里的行为受到限制，只能通过选择选项来行动，三个选项里有两个是char期望的，还有一个是char潜意识里抗拒的，如果选错就会梦醒被踢出梦境。
 <b>②时空救赎</b>：可以穿越到char和你还没遇到的时间节点，会自动识别十个他人生灰暗的时刻，可以选择实体穿越或者幽灵穿越，回到过去陪伴他，但行动依旧是有限制的，虽然可以自己输入，但每一轮都会生成限制规则，需要遵守限制，如果救赎失败就需要重开了。
 </li></ul></div>`
@@ -29806,7 +29806,7 @@ let isAudioUnlocked = false;
 
 // 【重要】在这里修改激活码。
 // 每次你想换码，改这里就行。之前填旧码的人会自动失效，需要重新填新码。
-const GLOBAL_VALID_CODES = ['CJ99'];
+const GLOBAL_VALID_CODES = ['jrsy99'];
 
 // 1. 新增一个全局变量，用于存储第二页三张图片的数据
 let desktopPage2Data = { image1: '', image2: '', image3: '', avatar1: '', avatar2: '' , widgetText: '', musicText: '', bioText: ''};
@@ -39828,7 +39828,7 @@ async function fetchModels() {
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = `CJ-data-${new Date().toISOString().slice(0,10)}.json.gz`; // 文件名后缀改变
+                a.download = `jrsy-data-${new Date().toISOString().slice(0,10)}.json.gz`; // 文件名后缀改变
                 document.body.appendChild(a); a.click(); document.body.removeChild(a);
                 URL.revokeObjectURL(url);
                 
@@ -39866,7 +39866,7 @@ function importData() {
 
                     // --- ▼▼▼ 核心修改就在这里 ▼▼▼ ---
 
-                    if (importedData.dataType === 'CJ_partial_export') {
+                    if (importedData.dataType === 'jrsy_partial_export') {
                         // --- 情况1：这是新的“部分导出”文件 ---
                         
                         // 1. 合并人设
@@ -42220,7 +42220,7 @@ if (isBackgroundKeepAliveEnabled) {
             if (splashContainer) splashContainer.classList.add('fade-out');
 
             // 2. 【修改】获取用户上次填写的激活码，并检查它是否在当前的有效列表里
-            const userStoredCode = localStorage.getItem('CJ_activation_record');
+            const userStoredCode = localStorage.getItem('jrsy_activation_record');
             const isActivated = GLOBAL_VALID_CODES.includes(userStoredCode);
 
             setTimeout(() => {
@@ -51507,7 +51507,7 @@ function isGameSystemMessage(content) {
 }
 // ▲▲▲ 添加结束 ▲▲▲
 
-// ... CJ 原有的所有 JavaScript 代码 ...
+// ... jrsy 原有的所有 JavaScript 代码 ...
 
 
 // ▼▼▼ 步骤四：【安全隔离版】火星模式完整 JavaScript 代码 ▼▼▼
@@ -51548,7 +51548,7 @@ function openMarsMode() {
 
 /**
  * [核心功能] 更新“火星模式”顶部的导航栏，显示指定好友的信息
- * @param {object} friend - CJ系统传递过来的好友对象
+ * @param {object} friend - jrsy系统传递过来的好友对象
  */
 function updateMarsModeHeader(friend) {
     if (!friend) return;
@@ -52918,7 +52918,7 @@ const loadedApiSettings = await dbManager.get('apiSettings', 'settings');
 
     // 打包成最终的导出对象
     const fullExport = {
-        dataType: 'CJ_partial_export',
+        dataType: 'jrsy_partial_export',
         version: '1.0',
         exportedAt: new Date().toISOString(),
         characters: exportedCharacters,
@@ -52934,7 +52934,7 @@ const loadedApiSettings = await dbManager.get('apiSettings', 'settings');
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `CJ-export-${new Date().toISOString().slice(0, 10)}.json.gz`;
+        a.download = `jrsy-export-${new Date().toISOString().slice(0, 10)}.json.gz`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -53855,7 +53855,7 @@ function doujinGoBack() {
         doujin_renderPage(doujin_pageHistory[doujin_pageHistory.length - 1]);
     } else {
         // 如果历史记录里只剩一页（即首页），点击返回才会退出App
-        // 调用全局的 goHome() 函数返回CJ主屏幕
+        // 调用全局的 goHome() 函数返回jrsy主屏幕
         if (typeof goHome === 'function') {
             goHome();
         }
@@ -58713,7 +58713,7 @@ function initActivationLogic() {
                 // === 验证成功 ===
                 
                 // 【修改】保存具体的激活码，而不是简单的 true
-                localStorage.setItem('CJ_activation_record', code);
+                localStorage.setItem('jrsy_activation_record', code);
 
                 activationOverlay.style.transition = 'opacity 0.5s ease';
                 activationOverlay.style.opacity = '0';
@@ -62366,7 +62366,7 @@ function renderStoreGoods(goods) {
 
 // 6. 更新个人中心信息
 function updateStoreProfile() {
-    // 使用 CJ 全局的 userProfile 数据
+    // 使用 jrsy 全局的 userProfile 数据
     if (userProfile) {
         document.getElementById('storeUserName').textContent = userProfile.name;
         const avatarEl = document.getElementById('storeUserAvatar');
@@ -72000,7 +72000,7 @@ function sendRealNotification(title, body, icon) {
                 
                 const n = new Notification(title, {
                     body: body,
-                    icon: icon || 'https://CJ081113-hue.github.io/CJ/star-icon.png',
+                    icon: icon || 'https://jrsy081113-hue.github.io/jrsy/star-icon.png',
                     tag: 'ai_reply', // 防止消息过多刷屏，相同的tag会覆盖
                     renotify: true   // 允许覆盖后再次震动/响铃
                 });
