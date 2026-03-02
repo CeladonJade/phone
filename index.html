@@ -21569,8 +21569,38 @@ padding-top: 50px !important;
     color: #000;
 }
 
+css
 .chat-input textarea {
-    resize: none !important;
+font-size: 18px !important;
+resize: none !important;
+border: none !important;
+outline: none !important;
+background: transparent !important;
+box-shadow: none !important;
+}
+
+.chat-input textarea::after,
+.chat-input textarea::before,
+.chat-input::after,
+.chat-input::before,
+.input-wrapper::after,
+.input-wrapper::before {
+display: none !important;
+content: none !important;
+width: 0 !important;
+height: 0 !important;
+border: none !important;
+}
+
+.input-wrapper {
+border: none !important;
+box-shadow: none !important;
+}
+
+.nav-bar {
+top: 0 !important;
+box-shadow: none !important;
+border-bottom: none !important;
 }
 
     </style>
