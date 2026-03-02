@@ -82,7 +82,7 @@ html {
 
         
 
-.status-bar {display: none !important;
+.status-bar {
     height: 0px;
     display: flex;
     justify-content: space-between;
@@ -6931,6 +6931,21 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
     box-sizing: border-box;
 }
 /* ▲▲▲ 添加到此结束 ▲▲▲ */
+
+/* ▼▼▼ 将这段新增的CSS代码粘贴到 <style> 区域的末尾 ▼▼▼ */
+css
+/* 让所有界面的顶栏直接顶到最上方 */
+.nav-bar {
+top: 0 !important;
+}
+
+/* 统一调整内容区域的间距，让它刚好贴在顶栏下面 */
+.wechat-content {
+padding-top: 50px !important;
+}
+
+/* ▲▲▲ 添加到此结束 ▲▲▲ */
+
 
 /* 新增：用于包裹时间和已读状态的容器 */
 .message-footer-container {
