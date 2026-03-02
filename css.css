@@ -6,8 +6,8 @@ box-shadow: none !important;
 border: 1px solid #e0e0e0 !important;
 border-radius: 20px !important;
 overflow: hidden !important;
+padding: 10px 15px !important;
 }
-
 
 .message-content,
 .chat-input textarea {
