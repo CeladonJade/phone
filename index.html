@@ -6943,17 +6943,26 @@ padding-top: 50px !important;
 }
 
 css
-/* 强力清除输入框周边的奇怪残留 */
-.chat-input textarea {
-    background: transparent !important;
-    border: none !important;
+/* 1. 解决顶栏残留的边线和阴影 */
+.nav-bar {
     box-shadow: none !important;
+    border-bottom: none !important;
 }
 
-/* 如果你之前写了类似 .cursor 的类，直接删掉或者加这个 */
-.cursor, .fake-cursor {
+/* 2. 强力清除那个灰色方块（如果是伪元素） */
+.chat-input textarea::after,
+.chat-input textarea::before,
+.input-wrapper::after,
+.input-wrapper::before {
     display: none !important;
+    content: none !important;
 }
+
+/* 3. 如果它是父级容器的边框，也一并去掉 */
+.chat-input {
+    border: none !important;
+}
+
 
 /* ▲▲▲ 添加到此结束 ▲▲▲ */
 
