@@ -822,7 +822,7 @@ html {
         .message-content {
             max-width: 90%;
             padding: 10px 14px;
-            font-size: var(--font-size, 18px);
+            font-size: var(--font-size, 20px);
             line-height: 1.4;
             word-wrap: break-word;
             word-break: break-word;
@@ -954,7 +954,7 @@ html {
             border: 1px solid var(--border-color, #d1d1d6);
             border-radius: var(--input-radius, 17px);
             padding: 8px 15px;
-            font-size: var(--font-size, 18px);
+            font-size: var(--font-size, 20px);
             outline: none;
             font-family: var(--font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
             transition: all 0.3s ease;
@@ -6941,28 +6941,6 @@ top: 0 !important;
 .wechat-content {
 padding-top: 50px !important;
 }
-
-css
-/* 1. 解决顶栏残留的边线和阴影 */
-.nav-bar {
-    box-shadow: none !important;
-    border-bottom: none !important;
-}
-
-/* 2. 强力清除那个灰色方块（如果是伪元素） */
-.chat-input textarea::after,
-.chat-input textarea::before,
-.input-wrapper::after,
-.input-wrapper::before {
-    display: none !important;
-    content: none !important;
-}
-
-/* 3. 如果它是父级容器的边框，也一并去掉 */
-.chat-input {
-    border: none !important;
-}
-
 
 /* ▲▲▲ 添加到此结束 ▲▲▲ */
 
@@ -21589,6 +21567,10 @@ css
 .wechat-dark-mode .redemption-age-badge {
     background: #fff;
     color: #000;
+}
+
+.chat-input textarea {
+    resize: none !important;
 }
 
     </style>
