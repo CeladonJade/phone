@@ -6,11 +6,6 @@ border: none !important;
 box-shadow: none !important;
 }
 
-
-.chat-input *:last-child:not(textarea):not(button) {
-display: none !important;
-}
-
 .message-content,
 .chat-input textarea {
   font-size: 18px !important;
