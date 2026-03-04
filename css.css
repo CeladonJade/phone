@@ -23,3 +23,20 @@ padding: 10px 15px !important;
 .wechat-content {
   padding-top: 0 !important;
 }
+
+@font-face {
+    font-family: 'QingFont';
+    src: url('https://yexingphoto.pages.dev/file/qcfpQXah.ttf') format('truetype');
+}
+
+/* 情书正文和标题 */
+.write-letter-body, .write-letter-title {
+    font-family: 'QingFont' !important;
+}
+
+/* 纸条写字框和手写回复 */
+#whisperWriteInput,
+.note-paper.big-note.user-written .note-content.original-text,
+.handwritten-reply.user {
+    font-family: 'QingFont' !important;
+}
