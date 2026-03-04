@@ -34,9 +34,14 @@ padding: 10px 15px !important;
     font-family: 'QingFont' !important;
 }
 
-/* 纸条写字框和手写回复 */
-#whisperWriteInput,
-.note-paper.big-note.user-written .note-content.original-text,
-.handwritten-reply.user {
-    font-family: 'QingFont' !important;
+/* 纸条正文和对话 */
+.note-content.original-text,
+#bigWhisperContent,
+#whisperDialogueContainer,
+#whisperWriteInput {
+font-family: 'QingFont' !important;
+}
+
+.handwritten-reply {
+font-family: 'QingFont' !important;
 }
