@@ -34,23 +34,27 @@ padding: 10px 15px !important;
     font-family: 'QingFont' !important;
 }
 
-/* 预览列表：只改阿青写的 */
+/* 预览：阿青写的（排除我的马山正体）*/
 .note-grid.revealed:not(.font-mashanzheng) .note-content {
-font-family: 'QingFont' !important;
+    font-family: 'QingFont' !important;
 }
 
-/* 详情页：只改阿青的原始内容和阿青的回复 */
-.note-paper.user-written .note-content.original-text,
-.handwritten-reply.user {
-font-family: 'QingFont' !important;
+/* 详情页：你先开始的纸条，只改原始内容 */
+.note-paper.user-written .note-content.original-text {
+    font-family: 'QingFont' !important;
 }
 
-/* 如果是我先开始的纸条，只改阿青的回复部分 */
-.handwritten-reply.user {
-font-family: 'QingFont' !important;
+/* 详情页：我先开始的纸条，你的回复部分 */
+.note-paper:not(.user-written) .handwritten-reply.user {
+    font-family: 'QingFont' !important;
 }
 
-/* 写字输入框 */
+/* 详情页：你先开始的纸条，你的回复部分 */
+.note-paper.user-written .handwritten-reply.user {
+    font-family: 'QingFont' !important;
+}
+
+/* 输入框 */
 #whisperWriteInput {
-font-family: 'QingFont' !important;
+    font-family: 'QingFont' !important;
 }
