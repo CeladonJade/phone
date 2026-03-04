@@ -34,14 +34,17 @@ padding: 10px 15px !important;
     font-family: 'QingFont' !important;
 }
 
-/* 纸条正文和对话 */
-.note-content.original-text,
-#bigWhisperContent,
-#whisperDialogueContainer,
-#whisperWriteInput {
-font-family: 'QingFont' !important;
+/* 1. 预览列表：只改阿青写的 */
+.note-grid.revealed:not(.font-mashanzheng) .note-content {
+    font-family: 'QingFont' !important;
 }
 
-.handwritten-reply {
-font-family: 'QingFont' !important;
+/* 2. 详情页：阿青写的正文部分 */
+#bigWhisperContent {
+    font-family: 'QingFont' !important;
+}
+
+/* 3. 写字时的输入框 */
+#whisperWriteInput {
+    font-family: 'QingFont' !important;
 }
