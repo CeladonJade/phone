@@ -39,21 +39,7 @@ padding: 10px 15px !important;
 font-family: 'QingFont' !important;
 }
 
-/* 详情页: 阿青开头第一句 */
-.note-paper.user-written .note-content.original-text,
-.note-paper.user-written #bigWhisperContent.original-text {
-font-family: 'QingFont' !important;
-font-weight: normal !important;
-font-size: 30px !important;
-}
-
-/* 详情页: 阿瑾开头第一句 */
-.note-paper:not(.user-written) .note-content.original-text,
-.note-paper:not(.user-written) #bigWhisperContent.original-text {
-font-weight: normal !important;
-font-size: 30px !important;
-}
-
+#bigWhisperContent { font-size: 19px !important; }
 
 /* 详情页：阿瑾先开始的纸条，阿青的回复 */
 .note-paper:not(.user-written) .handwritten-reply.user {
