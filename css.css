@@ -51,7 +51,7 @@ font-weight: normal !important;
 .note-paper:not(.user-written) #bigWhisperContent.original-text {
 font-weight: normal !important;
 }
-#bigWhisperContent { font-size: 30px !important; }
+#bigWhisperContent { font-size: 20px !important; }
 
 /* 详情页：阿瑾先开始的纸条，阿青的回复 */
 .note-paper:not(.user-written) .handwritten-reply.user {
