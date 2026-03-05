@@ -39,8 +39,7 @@ padding: 10px 15px !important;
 font-family: 'QingFont' !important;
 }
 
-/* 详情页：阿青先开始的纸条，原始正文用你的字体（加强版） */
-.note-paper.user-written .note-content.original-text,
+/* 详情页：阿青先开始的纸条，原始正文用你的字体（包括马山正体开头的情况） */
 .note-paper.user-written .original-text {
 font-family: 'QingFont' !important;
 font-weight: normal !important;
