@@ -36,32 +36,34 @@ padding: 10px 15px !important;
 
 /* 预览页：阿青写的纸条显示你的字体 */
 .note-grid.revealed:not(.font-mashanzheng) .note-content {
-font-family: 'QingFont' !important;
+    font-family: 'QingFont' !important;
 }
 
-/* 详情页：阿青先开始的纸条，原始正文用你的字体（包括马山正体开头的情况） */
-.note-paper.user-written .original-text {
-font-family: 'QingFont' !important;
-font-weight: normal !important;
+/* 详情页：阿青开头第一句 */
+.note-paper.user-written .note-content.original-text,
+.note-paper.user-written #bigWhisperContent.original-text,
+.user-written .original-text {
+    font-family: 'QingFont' !important;
+    font-weight: normal !important;
 }
 
-/* 详情页：阿瑾先开始的纸条，阿青的回复用你的字体 */
+/* 详情页：阿瑾先开始的纸条，阿青的回复 */
 .note-paper:not(.user-written) .handwritten-reply.user {
-font-family: 'QingFont' !important;
+    font-family: 'QingFont' !important;
 }
 
-/* 详情页：阿青先开始的纸条，阿青的回复用你的字体 */
+/* 详情页：阿青先开始的纸条，阿青的回复 */
 .note-paper.user-written .handwritten-reply.user {
-font-family: 'QingFont' !important;
+    font-family: 'QingFont' !important;
 }
 
-/* 输入框：打字时就显示你的字体 */
+/* 输入框 */
 #whisperWriteInput {
-font-family: 'QingFont' !important;
+    font-family: 'QingFont' !important;
 }
 
-/* 取消所有人开头第一段的加粗 */
+/* 取消所有开头第一段的加粗 */
 .original-text {
-font-weight: normal !important;
-font-size: inherit !important;
+    font-weight: normal !important;
+    font-size: inherit !important;
 }
