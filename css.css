@@ -44,14 +44,14 @@ font-family: 'QingFont' !important;
 .note-paper.user-written #bigWhisperContent.original-text {
 font-family: 'QingFont' !important;
 font-weight: normal !important;
-font-size: 19px !important;
+font-size: 30px !important;
 }
 
 /* 详情页: 阿瑾开头第一句 */
 .note-paper:not(.user-written) .note-content.original-text,
 .note-paper:not(.user-written) #bigWhisperContent.original-text {
 font-weight: normal !important;
-font-size: 19px !important;
+font-size: 30px !important;
 }
 
 
