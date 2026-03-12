@@ -43405,8 +43405,8 @@ async function generateSummary(friendId, turnCount) {
         return;
     }
 
-    // 2. 计算总结点数量 (2轮1点)
-    const summaryPointCount = Math.ceil(turnCount / 2);
+    // 2. 计算总结点数量
+    const summaryPointCount = 1;
     const fullHistory = chatHistories[friendId] || [];
     
     // --- 3. 确定搜索起点 (上次总结到了哪里) ---
@@ -43550,7 +43550,7 @@ const sender = msg.type === 'sent' ? activePersona.name : friend.name;
 
 ${customInstruction} 
     【总结标准 (你必须严格遵守)】:
-    1.  **【二合一原则】**: 请生成 **${summaryPointCount}条** 总结点。
+    1. **【整合原则】**: 请将所有对话内容归纳为 **1条** 完整的总结段落。按事件主题（而非对话轮次）组织，同一话题跨多轮的合并描述。只保留剧情转折、新信息、约定达成和情感变化，跳过日常寒暄和重复内容。控制在300-500字以内。
     2.  **【全景视角】**: 必须同时包含线上聊天的内容和线下模式（如果有）发生的剧情。
     3.  **【第三人称视角】**: 总结中严禁使用“我”或“你”，必须使用角色的名字（${activePersona.name} 和 ${friend.name}）。
     4.  **【特殊事件】**: 如果遇到转账、红包、送礼等事件，请务必记录。
