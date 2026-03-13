@@ -76,4 +76,4 @@ font-weight: normal !important;
 }
 
 /*日记正文页-日记本样式*/ 
-`div#fullDiaryContent{background:#ffffff !important;border-radius:12px !important;box-shadow:0 2px 8px rgba(0,0,0,0.08) !important;padding:16px !important;font-family:'QingFont',cursive !important;font-weight:normal !important;line-height:1.8 !important;margin:12px !important;}`
+`div#fullDiaryContent{background:padding-bottom:80px !important;#ffffff !important;border-radius:12px !important;box-shadow:0 2px 8px rgba(0,0,0,0.08) !important;padding:16px !important;font-family:'QingFont',cursive !important;font-weight:normal !important;line-height:1.8 !important;margin:12px !important;}`
