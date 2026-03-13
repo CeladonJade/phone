@@ -77,13 +77,23 @@ font-weight: normal !important;
 
 /*日记正文页-日记本样式*/
 #diaryViewScreen .wechat-content {
-background: #ffffff !important;
+background:
+repeating-linear-gradient(
+to bottom,
+transparent,
+transparent 35px,
+#e0e0e0 35px,
+#e0e0e0 36px
+),
+#ffffff !important;
 border-radius: 12px !important;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
 padding: 16px !important;
+padding-top: 56px !important;
 padding-bottom: 80px !important;
 font-family: 'QingFont', cursive !important;
 font-weight: normal !important;
-line-height: 1.8 !important;
+font-size: 18px !important;
+line-height: 36px !important;
 margin: 12px !important;
 }
