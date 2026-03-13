@@ -75,6 +75,5 @@ font-family: 'QingFont', cursive !important;
 font-weight: normal !important; 
 }
 
-/*日记正文页-橫线日记本样式*/ 
-#fullDiaryContent {font-family: 'QingFont', cursive !important;font-weight: normal !important;background-image: repeating-linear-gradient(to bottom,transparent,transparent 31px,#d0c9b8 31px,#d0c9b8 32px);line-height: 32px !important;padding: 50px 16px 80px 16px !important;background-attachment: local;}
-
+/*日记正文页-日记本样式*/ 
+#fullDiaryContent { background: var(--letter-bg, #fffdf7) !important; border-radius: 8px !important; padding: 16px !important; } .write-letter-paper, #fullDiaryContent { /* 共享同一套样式 */ }
