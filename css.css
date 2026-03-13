@@ -68,3 +68,26 @@ font-family: 'QingFont' !important;
 #whisperWriteInput {
 font-family: 'QingFont' !important;
 }
+
+/*日记预览页标题*/ 
+.diary-cover-thought { 
+font-family: 'QingFont', cursive !important; 
+font-weight: normal !important; 
+}
+
+/*日记正文页-橫线日记本样式
+*/ 
+#fullDiaryContent{ 
+font-family: 'QingFont, cursive !important; 
+font-weight: normal !important; 
+background-image: repeating-linear-gradient(
+to bottom, 
+transparent, 
+transparent 31px, 
+#d0c9b831px, 
+#d0c9b8 32px 
+);
+line-height: 32px !important; 
+padding: 0 16px 80px 16px !important; 
+background-attachment: local; 
+}
