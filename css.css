@@ -75,10 +75,16 @@ font-family: 'QingFont' !important;
 }
 
 /*日记预览页标题*/
-.diary-cover-thought {
-font-family: 'QingFont', cursive !important;
-font-weight: normal !important;
+#myDiaryListContainer .diary-cover-thought {
+    font-family: 'QingFont', cursive !important;
+    font-weight: normal !important;
 }
+
+#diaryContentArea .diary-cover-thought {
+    font-family: 'RoleFont', serif !important;
+    font-weight: normal !important;
+}
+
 
 /*日记正文页-日记本样式*/
 #diaryViewScreen .wechat-content {
