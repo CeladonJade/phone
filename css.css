@@ -82,31 +82,31 @@ font-weight: normal !important;
 
 /*日记正文页-日记本样式*/
 #diaryViewScreen .wechat-content {
-background:
-repeating-linear-gradient(
+background: repeating-linear-gradient(
 to bottom,
 transparent,
 transparent 35px,
 #e0e0e0 35px,
 #e0e0e0 36px
-),
-#ffffff !important;
+), #ffffff !important;
 border-radius: 12px !important;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
 padding: 16px !important;
 padding-top: 80px !important;
 padding-bottom: 80px !important;
-font-family: 'QingFont', cursive !important;
 font-weight: normal !important;
 font-size: 18px !important;
 line-height: 36px !important;
 margin: 12px !important;
+/* 把 font-family 删掉，不要写在这里了 */
 }
 
-/*日记本区分user和char*/
-.diary-mine {
-    font-family: 'QingFont', cursive;
+/* 我的日记 */
+#diaryViewScreen .diary-mine {
+font-family: 'QingFont', cursive !important;
 }
-.diary-role {
-    font-family: 'RoleFont', serif;
+
+/* 角色的日记 */
+#diaryViewScreen .diary-role {
+font-family: 'RoleFont', serif !important;
 }
