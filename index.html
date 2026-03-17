@@ -38148,6 +38148,14 @@ function showFullDiary(diaryId) {
     }
     // ------------------------------------
 
+const contentEl = document.getElementById('fullDiaryContent');
+contentEl.classList.remove('diary-mine', 'diary-role');
+if (diary.authorId === userProfile.id) {
+    contentEl.classList.add('diary-mine');
+} else {
+    contentEl.classList.add('diary-role');
+}
+
     // 切换页面
     setActivePage('diaryViewScreen');
 

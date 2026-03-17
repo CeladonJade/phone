@@ -29,6 +29,11 @@ padding: 10px 15px !important;
     src: url('https://yexingphoto.pages.dev/file/qcfpQXah.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'RoleFont';
+    src: url('https://yexingphoto.pages.dev/file/d4CjmgIV.ttf') format('truetype');
+}
+
 /* 情书正文和标题 */
 .write-letter-body, .write-letter-title {
     font-family: 'QingFont' !important;
@@ -96,4 +101,12 @@ font-weight: normal !important;
 font-size: 18px !important;
 line-height: 36px !important;
 margin: 12px !important;
+}
+
+/*日记本区分user和char*/
+.diary-mine {
+    font-family: 'QingFont', cursive;
+}
+.diary-role {
+    font-family: 'RoleFont', serif;
 }
